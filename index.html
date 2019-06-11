@@ -6,12 +6,15 @@
     <title>首页</title>
     <script src="./js/rem.js"></script>
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.2/skins/default/aliplayer-min.css" />
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
 	<div class="wrapper">
 
-        <ul id="accordion" class="accordion">
+        <ul id="accordion" class="accordion" style="display: none">
 
             <li>
                 <div class="link">强纳森留学<i class="fa fa-chevron-down"></i></div>
@@ -59,9 +62,293 @@
 
         </ul>
 
+        <!-- 头部 -->
+        <div class="header">
+            <span class="navBtn"></span>
+            <div class="logo"><img src="./images/logoTop.png" /></div>
+        </div>
+
+        <!-- 轮播图 -->
+        <div class="banner">
+            <ul class="cb-slideshow">
+                <li>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                </li>
+            </ul>
+            <div class="slideshow-filter"></div>
+        </div>
+
+        <!-- 选择菲律宾理由 -->
+        <div class="choice-reasons">
+            <h2>选择菲律宾理由</h2>
+            <div class="reasons-list clearfix">
+                <div class="item">
+                    <img src="./images/00reason-img01.png" />
+                    <div class="mask">
+                        <p>强纳森学长姐3-6个<br/>月快速到达目标分数</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/00reason-img02.png" />
+                    <div class="mask">
+                        <p>密集一对一长达<br>12堂课每日英文教学</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/00reason-img03.png" />
+                    <div class="mask">
+                        <p>学费包含三餐住<br>宿享专人洗衣打扫</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/00reason-img04.png" />
+                    <div class="mask">
+                        <p>四季如夏、海岛资源<br>丰富推荐喜欢海的学员</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 学员生活 -->
+		<div class="student-life">
+            <div class="title">
+                <h3>学员生活点滴</h3>
+                <h4>Student life</h4>
+            </div>
+            <div class="life-list clearfix">
+                <div class="item">
+                    <img src="./images/00life-img01.png" />
+                    <div class="mask">
+                        <h3>学习</h3>
+                        <h4>Study</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/00life-img02.png" />
+                    <div class="mask">
+                        <h3>夏令营</h3>
+                        <h4>Summer camp</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/00life-img03.png" />
+                    <div class="mask">
+                        <h3>学校活动</h3>
+                        <h4>School activity</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/00life-img03.png" />
+                    <div class="mask">
+                        <h3>海岛游</h3>
+                        <h4>lSland swims</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 校园视频 -->
+		<div class="video-wrap">
+            <div class="title">
+                <h3>精彩校园视频</h3>
+                <h4>Wonderful compus video</h4>
+            </div>
+            <div class="video">
+                <div class="prism-player" id="player-con"></div>
+            </div>
+            <p class="decTit">学员毕业演讲</p>
+        </div>
+
+        <!-- 强纳森故事 -->
+        <div class="story-wrap">
+            <img src="./images/00story-img.png" />
+            <p class="decTit">强纳森故事</p>
+        </div>
+
+        <!-- 优质学校 -->
+		<div class="good-schools">
+            <div class="headline">
+                <h3>优质学校</h3>
+                <span></span>
+            </div>
+
+            <div class="schools-list">
+                <div class="item">
+                    <div class="img-wrap">
+                        <img src="./images/00school-img01.png" />
+                    </div>
+                    <div class="text">
+                        <h3>CPI语言学校</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-wrap">
+                        <img src="./images/00school-img02.png" />
+                    </div>
+                    <div class="text">
+                        <h3>CPI语言学校</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-wrap">
+                        <img src="./images/00school-img03.png" />
+                    </div>
+                    <div class="text">
+                        <h3>CPI语言学校</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-link">
+                <a href="#">更多优质学校</a>
+            </div>
+        </div>
+
+        <!-- 热门景点 -->
+        <div class="hot-spots">
+            <div class="headline">
+                <h3>热门景点</h3>
+                <span></span>
+            </div>
+
+            <div class="spots-list">
+                <div class="item">
+                    <div class="img-wrap">
+                        <img src="./images/00spots-img01.png" />
+                    </div>
+                    <div class="text">
+                        <h3>长沙岛</h3>
+                        <p class="date">2018-07-29 08:16:42</p>
+                        <p class="dec">长滩岛（Boracay）是菲律宾中部的一座岛屿，属于西米沙鄢群岛，位于班乃岛西北2公里，是菲律宾的旅游胜地之一。长滩岛是菲律宾最著名的海滩，是“世界七大美丽沙滩”之一，以其独特的细腻入面粉的白沙出门。</p>
+                        <p class="link">菲律宾游学资讯</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-wrap">
+                        <img src="./images/00spots-img02.png" />
+                    </div>
+                    <div class="text">
+                        <h3>薄荷岛</h3>
+                        <p class="date">2018-07-29 08:16:42</p>
+                        <p class="dec">薄荷岛（Boracay）是菲律宾中部的一座岛屿，属于西米沙鄢群岛，位于班乃岛西北2公里，是菲律宾的旅游胜地之一。长滩岛是菲律宾最著名的海滩，是“世界七大美丽沙滩”之一，以其独特的细腻入面粉的白沙出门。</p>
+                        <p class="link">菲律宾游学资讯</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-wrap">
+                        <img src="./images/00spots-img03.png" />
+                    </div>
+                    <div class="text">
+                        <h3>妈妈怕西瓜岛</h3>
+                        <p class="date">2018-07-29 08:16:42</p>
+                        <p class="dec">妈妈怕西瓜岛（Boracay）是菲律宾中部的一座岛屿，属于西米沙鄢群岛，位于班乃岛西北2公里，是菲律宾的旅游胜地之一。长滩岛是菲律宾最著名的海滩，是“世界七大美丽沙滩”之一，以其独特的细腻入面粉的白沙出门。</p>
+                        <p class="link">菲律宾游学资讯</p>
+                    </div>
+                </div>
+            </div>
+            <div class="more-link">
+                <a href="#">更多热门景点</a>
+            </div>
+        </div>
+
+        <!-- 尾部 -->
+        <div class="footer">
+
+            <div class="logo"><img src="./images/logo.png" /></div>
+
+            <div class="copyright">粤备案：</div>
+
+            <div class="qr-code">
+                <p>微信公众号</p>
+				<img src="./images/qr-code.png" />
+            </div>
+
+            <div class="contact-way">
+                <div class="tel"><i class="icon"><img src="./images/tel-icon.png" /></i>咨询电话：188-1683-2743</div>
+                <div class="wechat"><i class="icon"><img src="./images/wechat-icon.png" /></i>微信：Johnathan520123</div>
+                <div class="company-address"><i class="icon"><img src="./images/address-icon.png" /></i>公司地址：广州市天河区天平架陶庄路5号<br/>空间一楼地铁6号线天平架站</div>
+            </div>
+
+            <div class="footerNav">
+                <ul>
+                    <li><a href="./index.html">首页</a><span></span></li>
+                    <li><a href="#">强纳森游学</a><span></span></li>
+                    <li><a href="#">菲律宾学校简介</a><span></span></li>
+                    <li><a href="#">强纳森资讯</a><span></span></li>
+                    <li><a href="#">学员生活点滴</a><span></span></li>
+                    <li><a href="#">强纳森淘宝店</a><span></span></li>
+                    <li><a href="#">线上资讯</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- 回到顶部 -->
+        <div class="backTop"></div>
 
     </div>
     <script src="./js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js"></script>
     <script src="./js/index.js"></script>
+
+    <script>
+		var player = new Aliplayer({
+			"id": "player-con",
+			"source": "http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4",
+			"width": "3.88rem",
+			"height": "2.2rem",
+			"autoplay": false,
+			"isLive": false,
+			"rePlay": false,
+			"playsinline": true,
+			"preload": true,
+			"controlBarVisibility": "hover",
+			"useH5Prism": true,
+			"skinLayout": [
+			
+				{
+					"name": "H5Loading",
+					"align": "cc"
+				},
+				{
+					"name": "errorDisplay",
+					"align": "tlabs",
+					"x": 0,
+					"y": 0
+				},
+				{
+					"name": "infoDisplay"
+				},
+				{
+					"name": "tooltip",
+					"align": "blabs",
+					"x": 0,
+					"y": 56
+				},
+				{
+					"name": "thumbnail"
+				},
+				
+			]
+		}, function (player) {
+			console.log("播放器创建了。");
+			}
+		);
+	</script>
 </body>
 </html>
