@@ -86,7 +86,7 @@
                             <li class="sub-item"><a href="#">课程选择</a></li>
                         </ul>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a href="javascript:void(0);"><span>游学资讯</span><i class="iconfont icon-xiangshangjiantou"></i></a>
                         <ul class="sub-list">
                             <li class="sub-item"><a href="#">常见问题</a></li>
@@ -110,7 +110,7 @@
                         <a href="javascript:void(0);"><span>强纳森淘宝店</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="javascript:void(0);"><span>线上咨询</span></a> -->
+                        <a href="javascript:void(0);"><span>线上咨询</span></a>
                     </li>
                 </ul>
             </div>
@@ -360,18 +360,52 @@
 
     <script>
         $(function () {
-            //导航菜单
-            $(".navBtn").click(function(){
-                $(".nav").show();
-            })
+            //导航菜单显示
+            $(".navBtn").click(function(event){
+                var e = window.event || event;
+                if(e.stopPropagation){
+                    e.stopPropagation();
+                }else{
+                    e.cancelBubble = true;
+                }   
+                $(".nav").toggle();
+            });
 
+            // 导航菜单取消冒泡
+            $(".nav").click(function(event){
+                var e = window.event || event;
+                if(e.stopPropagation){
+                    e.stopPropagation();
+                }else{
+                    e.cancelBubble = true;
+                }
+            });
+
+            // 点击空白处关闭导航菜单
+            document.onclick = function(){
+                $(".nav").hide();
+            };
+
+          
+
+            // 菜单栏折叠功能
             $(".nav-item a").click(function(){
-                $(this).next().slideToggle();
-                if(!$(this).find(".iconfont").hasClass("rota")){
+                var className = $(this).parents('li').parents().attr('class'); 
+                if(className == "nav-list"){
+					$(this).parents('li').siblings('li').children('ul').parent('li').children('a').removeClass('selected');//当没选中一级菜单时移除selected
+					$(this).parents('li').siblings('li').children('ul').parent('li').children('a').find('i').removeClass('rota');//当没选中一级菜单时移除rota
+					$(this).parents('li').siblings('li').children('ul').slideUp();
+				}
+                if($(this).siblings('ul').css('display') =='none'){
+                    $(this).addClass('selected');
+                    $(this).siblings('ul').slideDown();
                     $(this).find(".iconfont").addClass("rota");
                 }else{
+                    $(this).removeClass('selected');
+                    $(this).siblings('ul').slideUp();
                     $(this).find(".iconfont").removeClass("rota");
                 }
+           
             })
 
             // 视频播放

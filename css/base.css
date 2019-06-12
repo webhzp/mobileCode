@@ -219,11 +219,34 @@ li{
 	padding: 0 .3rem;
 	box-sizing: border-box;
 }
-.header .nav .nav-item.active a{
-	color: #4a90e2;
+.header .nav .nav-item .selected .sub-list{
+	display: block;
 }
 
+.header .nav .nav-item .selected{
+	background-color: #243e99;
+	color: #ffffff;
+}
 
+/* 箭头 */
+.header .nav .iconfont{
+	float: right;	
+}
+.header .nav .icon-xiangshangjiantou:before{
+	display: inline-block;
+	transition: all 0.3s ease-in-out;  
+	-webkit-transition: all 0.3s ease-in-out;  
+	-moz-transition: all 0.3s ease-in-out;  
+	-o-transition: all 0.3s ease-in-out;  
+	color: #050505;
+}
+
+/* 选中样式 */
+.header .nav .nav-item .selected .rota:before{
+	color: #ffffff;
+}
+
+/* 默认样式 */
 .header .nav .nav-item .rota:before{
 	display: inline-block;
 	transform: rotate(180deg);  
@@ -235,30 +258,15 @@ li{
 	-webkit-transition: all 0.3s ease-in-out;  
 	-moz-transition: all 0.3s ease-in-out;  
 	-o-transition: all 0.3s ease-in-out;  
-	color: #4a90e2;
+	color: #050505;
 }
-.header .nav .iconfont{
-	float: right;
-	
-}
-.header .nav .icon-xiangshangjiantou:before{
-	display: inline-block;
-	transition: all 0.3s ease-in-out;  
-	-webkit-transition: all 0.3s ease-in-out;  
-	-moz-transition: all 0.3s ease-in-out;  
-	-o-transition: all 0.3s ease-in-out;  
-	color: #333;
-}
+
 
 /* 二级导航 */
 .header .nav .sub-list{
 	width: 100%;
 	background-color: #fff;
 	display: none;
-	/* position: absolute;
-	top: .6rem;
-	left: 0;
-	z-index: 99; */
 }
 .header .nav .sub-list .sub-item{
 	height: .5rem;
