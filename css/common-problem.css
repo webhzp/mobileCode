@@ -1,0 +1,37 @@
+.content{
+    padding: 0 .3rem;
+    box-sizing: border-box;
+}
+.content h1{
+    font-size: .22rem;
+    text-align: center;
+    line-height: .34rem;
+    margin: .45rem auto;
+}
+
+/* 资讯分类 */
+.information-category .title{
+	height: .9rem;
+	line-height: .9rem;
+	font-size: .22rem;
+	border-bottom:.02rem solid #eeeeee;
+	margin-bottom: .2rem;
+}
+.information-category .cate-list li{
+    height: .44rem;
+    line-height: .44rem;
+	font-size: .18rem;
+	margin-bottom: .08rem;
+}
+.information-category .cate-list li a{
+    width: 100%;
+    height: 100%;
+    color: #4a90e2;
+    display: flex;
+}
+.information-category .cate-list li i{
+    margin-right: .12rem;
+}
+.information-category .cate-list li img{
+    width: .44rem;
+}
