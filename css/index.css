@@ -121,13 +121,25 @@
     position: relative;
     margin-bottom: .4rem;
 }
-.video-wrap .video .prism-player{
+.video-wrap .video .video-player{
     width: 3.88rem;
     height:2.2rem;
     position: absolute;
     left: 50%;
     top: 50%;
-    z-index: 3;
+    z-index: 98;
+    transform: translate(-50%,-50%);
+}
+.video-wrap .video .playBtn{
+    width: .54rem;
+    height: .54rem;
+    display: block;
+    background: url(../images/play-btn.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 99;
     transform: translate(-50%,-50%);
 }
 

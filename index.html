@@ -5,8 +5,8 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>首页</title>
     <script src="./js/rem.js"></script>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1233238_cd0g8jp80wd.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.2/skins/default/aliplayer-min.css" />
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -62,10 +62,58 @@
 
         </ul>
 
+     
+
         <!-- 头部 -->
         <div class="header">
             <span class="navBtn"></span>
             <div class="logo"><img src="./images/logoTop.png" /></div>
+            <!-- 导航菜单 -->
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="javascript:void(0);"><span>强纳森留学</span><i class="iconfont icon-xiangshangjiantou"></i></a>
+                        <ul class="sub-list">
+                            <li class="sub-item "><a href="#">强纳森故事</a></li>
+                            <li class="sub-item"><a href="#">选择强纳森的理由</a></li>
+                            <li class="sub-item"><a href="#">关于菲律宾游学</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0);"><span>菲律宾学校简介</span><i class="iconfont icon-xiangshangjiantou"></i></a>
+                        <ul class="sub-list">
+                            <li class="sub-item"><a href="#">优质学校</a></li>
+                            <li class="sub-item"><a href="#">课程选择</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="javascript:void(0);"><span>游学资讯</span><i class="iconfont icon-xiangshangjiantou"></i></a>
+                        <ul class="sub-list">
+                            <li class="sub-item"><a href="#">常见问题</a></li>
+                            <li class="sub-item"><a href="#">行前准备</a></li>
+                            <li class="sub-item"><a href="#">菲律宾入境填写</a></li>
+                            <li class="sub-item"><a href="#">菲律宾签证&amp;机票</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0);"><span>学员生活点滴</span><i class="iconfont icon-xiangshangjiantou"></i></a>
+                        <ul class="sub-list">
+                            <li class="sub-item"><a href="#">学习</a></li>
+                            <li class="sub-item"><a href="#">夏令营</a></li>
+                            <li class="sub-item"><a href="#">海岛游</a></li>
+                            <li class="sub-item"><a href="#">学校活动</a></li>
+                            <li class="sub-item"><a href="#">热门景点</a></li>
+                            <li class="sub-item"><a href="#">推荐餐厅</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0);"><span>强纳森淘宝店</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0);"><span>线上咨询</span></a> -->
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- 轮播图 -->
@@ -169,7 +217,11 @@
                 <h4>Wonderful compus video</h4>
             </div>
             <div class="video">
-                <div class="prism-player" id="player-con"></div>
+                <!-- <div class="prism-player" id="player-con"></div> -->
+                <video  class="video-player" id="video-player" src="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4"
+                    loop="loop" poster="./images/video-cover.png" webkit-playsinline="">
+                </video>
+                <span class="playBtn"></span>
             </div>
             <p class="decTit">学员毕业演讲</p>
         </div>
@@ -307,48 +359,56 @@
     <script src="./js/index.js"></script>
 
     <script>
-		var player = new Aliplayer({
-			"id": "player-con",
-			"source": "http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4",
-			"width": "3.88rem",
-			"height": "2.2rem",
-			"autoplay": false,
-			"isLive": false,
-			"rePlay": false,
-			"playsinline": true,
-			"preload": true,
-			"controlBarVisibility": "hover",
-			"useH5Prism": true,
-			"skinLayout": [
-			
-				{
-					"name": "H5Loading",
-					"align": "cc"
-				},
-				{
-					"name": "errorDisplay",
-					"align": "tlabs",
-					"x": 0,
-					"y": 0
-				},
-				{
-					"name": "infoDisplay"
-				},
-				{
-					"name": "tooltip",
-					"align": "blabs",
-					"x": 0,
-					"y": 56
-				},
-				{
-					"name": "thumbnail"
-				},
-				
-			]
-		}, function (player) {
-			console.log("播放器创建了。");
-			}
-		);
-	</script>
+        $(function () {
+            //导航菜单
+            $(".navBtn").click(function(){
+                $(".nav").show();
+            })
+
+            $(".nav-item a").click(function(){
+                $(this).next().slideToggle();
+                if(!$(this).find(".iconfont").hasClass("rota")){
+                    $(this).find(".iconfont").addClass("rota");
+                }else{
+                    $(this).find(".iconfont").removeClass("rota");
+                }
+            })
+
+            // 视频播放
+            var video = document.getElementById("video-player");
+            var current = true;
+            $(".playBtn,.video-player").click(function(){
+                if(current){
+                    video.play()
+                    $(".playBtn").hide();
+                    current = false  //下次点击的状态
+                }else{
+                    video.pause()
+                    $(".playBtn").show();
+                    current = true
+                }
+            })
+
+            // 显示回到顶部按钮
+            $(window).scroll(function(){
+                // 滚动条距离顶部的距离 大于 屏幕分辨率的高时
+                var screenH = window.screen.height;//获取屏幕分辨率的高
+                if($(window).scrollTop() >= screenH){
+                    $(".backTop").show();
+                }else{
+                    $(".backTop").hide();
+                }
+            });
+
+            // 回到顶部
+			$(".backTop").click(function () {
+				var speed = 500;//滑动的速度
+				$('body,html').animate({ scrollTop: 0 }, speed);
+				return false;
+            });
+         
+        })
+    </script>
+    
 </body>
 </html>

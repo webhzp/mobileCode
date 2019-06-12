@@ -195,6 +195,83 @@ li{
 	height: .34rem; 
 }
 
+/* 导航菜单 */
+.header .nav{
+	width: 50%;
+	height: auto;
+	padding-bottom: .5rem;
+	box-sizing: border-box;
+	background-color: #fff;
+	box-shadow: 0 0 .08rem #ccc;
+	position: relative;
+	left: -.3rem;
+	z-index: 99;
+	display: none;
+}
+.header .nav .nav-item{
+	font-size: .24rem;
+}
+.header .nav .nav-item a{
+	height: .6rem;
+	line-height: .6rem;
+	color: #000000;
+	display: block;	
+	padding: 0 .3rem;
+	box-sizing: border-box;
+}
+.header .nav .nav-item.active a{
+	color: #4a90e2;
+}
+
+
+.header .nav .nav-item .rota:before{
+	display: inline-block;
+	transform: rotate(180deg);  
+	-webkit-transform: rotate(180deg);  
+	-moz-transform: rotate(180deg);  
+	-o-transform: rotate(180deg);  
+	-ms-transform: rotate(180deg); 
+	transition: all 0.3s ease-in-out;  
+	-webkit-transition: all 0.3s ease-in-out;  
+	-moz-transition: all 0.3s ease-in-out;  
+	-o-transition: all 0.3s ease-in-out;  
+	color: #4a90e2;
+}
+.header .nav .iconfont{
+	float: right;
+	
+}
+.header .nav .icon-xiangshangjiantou:before{
+	display: inline-block;
+	transition: all 0.3s ease-in-out;  
+	-webkit-transition: all 0.3s ease-in-out;  
+	-moz-transition: all 0.3s ease-in-out;  
+	-o-transition: all 0.3s ease-in-out;  
+	color: #333;
+}
+
+/* 二级导航 */
+.header .nav .sub-list{
+	width: 100%;
+	background-color: #fff;
+	display: none;
+	/* position: absolute;
+	top: .6rem;
+	left: 0;
+	z-index: 99; */
+}
+.header .nav .sub-list .sub-item{
+	height: .5rem;
+	line-height: .5rem;
+	font-size: .2rem;
+}
+.header .nav .sub-list .sub-item a{
+	color: #1c1c1c;
+	display:block;
+	padding: 0 .3rem;
+	box-sizing: border-box;
+}
+
 
 /* 公共底部 */
 .footer{
