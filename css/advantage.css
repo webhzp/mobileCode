@@ -1,0 +1,19 @@
+.content{
+    padding: 0 .3rem;
+    box-sizing: border-box;
+}
+.advantage-item{
+    font-size: .22rem;
+    margin-top: .45rem;
+}
+.advantage-item h3{
+    height: 1.1rem;
+    line-height: 1.1rem;
+    text-align: center;
+    color: #0a0a0a;
+}
+.advantage-item p{
+    width: 5.32rem;
+    line-height: .36rem;
+    margin: 0 auto .3rem;
+}

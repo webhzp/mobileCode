@@ -1,0 +1,16 @@
+.location{
+    margin-bottom: .4rem;;
+}
+.content{
+    padding: 0 .3rem;
+    box-sizing: border-box;
+}
+.content img{
+    margin-bottom: .7rem;
+}
+.text{
+    text-align: center;
+    line-height: .36rem;
+    margin-bottom: .7rem;
+    font-size: .22rem;
+}

@@ -1,0 +1,16 @@
+.content{
+    padding: 0 .3rem;
+    box-sizing: border-box;
+}
+.location{
+    margin-bottom: .4rem;;
+}
+.headline{
+    margin-bottom: .4rem;
+}
+.headline img{
+    display: block;
+}
+.life-item{
+    margin-bottom: .4rem;
+}
