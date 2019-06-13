@@ -1,0 +1,58 @@
+.content{
+    padding: 0 .3rem;
+    box-sizing: border-box;
+}
+
+/* 学校简介 */
+.school-description{
+    width: 100%;
+    margin-bottom: .4rem;
+}
+.school-description img{
+    width: 100%;
+    display: block;
+    margin-bottom: .4rem;
+}
+.school-description h3{
+    font-size: .22rem;
+    height: .38rem;
+    line-height: .38rem;
+    padding-left: .2rem;
+    padding-bottom: .2rem;
+    border-bottom: .02rem solid #eeeeee;
+    margin-bottom: .25rem;
+}
+.school-description p{
+    font-size: .16rem;
+    margin-bottom: .3rem;
+}
+
+/* 校园相册 */
+.album-item .headline{
+    width: 100%;
+    height:1.06rem;
+    line-height: 1.06rem;
+    color: #ffffff;
+    text-align: center;
+    font-size: .34rem;
+    background-color: #243e99;
+    margin: .2rem 0;
+}
+.album-item .album-list .item{
+    width: 100%;
+    display: block;
+    margin-bottom: .2rem;
+}
+.album-item .album-list .item img{
+    width: 100%;
+    display: block;
+}
+
+/* 立即咨询 */
+.consultation-wrap .consulting-btn{
+    width: 5.28rem;
+    height: 1.12rem;
+    margin: 0 auto;
+    background:url(../images/consulting-btn-icon.png) no-repeat;
+    background-size: 100%;
+}

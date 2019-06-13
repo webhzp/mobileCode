@@ -3,9 +3,10 @@
     box-sizing: border-box;
 }
 .content h1{
-    font-size: .22rem;
+    font-size: .24rem;
     text-align: center;
     line-height: .34rem;
+    color: #0a0a0a;
     margin: .45rem auto;
 }
 
