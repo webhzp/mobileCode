@@ -9,30 +9,30 @@
     color: #0a0a0a;
     margin: .45rem auto;
 }
-
-/* 资讯分类 */
-.information-category .title{
-	height: .9rem;
-	line-height: .9rem;
-	font-size: .22rem;
-	border-bottom:.02rem solid #eeeeee;
-	margin-bottom: .2rem;
+.question-list .cate-item .headline{
+    width: 2.06rem;
+    height: .54rem;
+    line-height: .54rem;
+    font-size: .22rem;
+    text-align: center;
+    border: .04rem dotted #f8e71c;
+    color: #7ed321;
+    margin: .4rem auto .5rem;
 }
-.information-category .cate-list li{
-    height: .44rem;
-    line-height: .44rem;
-	font-size: .18rem;
-	margin-bottom: .08rem;
+.question-list .cate-item .question-item{
+    margin-bottom: .6rem;
 }
-.information-category .cate-list li a{
-    width: 100%;
-    height: 100%;
-    color: #4a90e2;
-    display: flex;
+.question-list .cate-item .question-item h3{
+    font-size: .28rem;
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: .6rem;
+    line-height: .42rem;
 }
-.information-category .cate-list li i{
-    margin-right: .12rem;
-}
-.information-category .cate-list li img{
-    width: .44rem;
+.question-list .cate-item .question-item p{
+    width: 4.5rem;
+    margin: 0 auto .3rem;
+    text-align: center;
+    line-height: .36rem;
 }

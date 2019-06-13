@@ -1,0 +1,70 @@
+.location{
+    margin-bottom: .4rem;
+}
+.content{
+    font-size: .24rem;
+    padding: 0 .3rem;
+    box-sizing: border-box;
+}
+.founder-info img{
+    width: 100%;
+    margin-bottom: .4rem;
+}
+.founder-info p{
+    text-align: center;
+    font-size: .24rem;
+    line-height: .34rem;
+}
+
+.content>h3{
+    text-align: center;
+    margin: .8rem auto;
+}
+
+.story-item{
+    margin-bottom: .6rem;
+}
+.story-item img{
+    width: 100%;
+    display: block;
+    margin-bottom: .4rem;
+}
+.story-item p{
+    text-align: center;
+    line-height: .4rem;
+}
+
+.self-description p{
+    text-indent: .5rem;
+    line-height: .34rem;
+    margin-bottom: .4rem;
+}
+
+.headline {
+    width: 100%;
+    margin: .8rem auto;
+}
+.headline img{
+    width: 100%;
+    display: block;
+}
+
+/* 选择理由 */
+.reasons-item {
+    text-align: center;
+    margin-bottom: .4rem;
+}
+.choice-reasons img{
+    width: 100%;
+}
+
+.reasons-item h4{
+    margin: .5rem auto .3rem;
+}
+.reasons-item p{
+    line-height: .36rem;
+}
+
+.other-item p{
+    margin-bottom: .4rem;
+}
