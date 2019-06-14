@@ -1,0 +1,28 @@
+.location{
+    margin-bottom: .4rem;
+}
+.content{
+    padding: 0 .3rem;
+    box-sizing: border-box;
+}
+.top-container{
+    margin-bottom: .4rem;
+}
+
+.process-item{
+    margin-bottom: .7rem;
+}
+.process-item .headline{
+    width: 2.06rem;
+    height: .54rem;
+    line-height: .54rem;
+    font-size: .3rem;
+    text-align: center;
+    border: .04rem dotted #f8e71c;
+    color: #000;
+    margin: 0 auto .4rem;
+}
+.process-item p{
+    text-align: center;
+    line-height: .34rem;
+}

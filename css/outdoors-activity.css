@@ -1,0 +1,70 @@
+
+.location{
+    margin-bottom: .4rem;;
+}
+
+.top-head{
+    margin-bottom: .44rem;
+    padding: 0 .3rem;
+    box-sizing: border-box;
+}
+.top-head p{
+    margin-bottom: .2rem;
+    font-size: .2rem;
+}
+.top-head .date{
+    color: #727375;
+}
+.top-head h4{
+    font-size: .24rem;
+    color: #4a90e2;
+    margin-bottom: .2rem;
+}
+
+.headline{
+    padding: 0 .3rem;
+    box-sizing: border-box;
+}
+
+.island-wrap .text{
+    width: 6.1rem;
+    text-align: center;
+    margin: .4rem auto .6rem;
+    line-height: .34rem;
+    font-size: .24rem;
+}
+
+.island-wrap .album-list{
+    background-color: #d0f2f7;
+    padding: 0.4rem .3rem;
+    box-sizing: border-box;
+}
+
+.island-wrap .album-list .album-item{
+    margin-bottom: .4rem;
+}
+
+
+.other-item p{
+    font-size: .22rem;
+    line-height: .36rem;
+    color: #000000;
+    text-align: center;
+}
+.other-item .consulting-btn{
+    width: 5.6rem;
+    height: .9rem;
+    line-height: .9rem;
+    background-color: #f58405;
+    color: #fff;
+    font-size: .3rem;
+    border-radius: .15rem;
+    text-align: center;
+    margin: .6rem auto 0;
+    box-shadow: 0 .03rem .08rem 0 #fa9a8d;
+}
+
+.information-category{
+    padding: 0.4rem .3rem;
+    box-sizing: border-box;
+}

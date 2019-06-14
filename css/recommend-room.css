@@ -1,0 +1,25 @@
+.location{
+    margin-bottom: .4rem;
+}
+.content{
+    padding: 0 .3rem;
+    box-sizing: border-box;
+}
+.top-container p{
+    margin: .4rem 0;
+    text-align: center;
+}
+
+.recommend-item{
+    font-size: .24rem;
+    margin-bottom: .5rem;
+}
+.recommend-item h3{
+    height: .7rem;
+    line-height: .7rem;
+    
+}
+.recommend-item p{
+    line-height: .4rem;
+    height: .4rem;
+}
