@@ -147,13 +147,15 @@
     margin-bottom: .4rem;
 }
 .video-wrap .video .video-player{
-    width: 3.88rem;
+    width: 3.86rem;
     height:2.2rem;
     position: absolute;
     left: 50%;
     top: 50%;
     z-index: 98;
     transform: translate(-50%,-50%);
+    background-color: #000;
+    overflow: hidden;
 }
 .video-wrap .video .playBtn{
     width: .54rem;
@@ -168,6 +170,33 @@
     transform: translate(-50%,-50%);
 }
 
+/* 视频居中 */
+.video-wrap .video .prism-player{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.prism-player .prism-big-play-btn .outter{
+    display: none;
+}
+
+/* 全屏按钮 */
+/* .prism-player .prism-fullscreen-btn{
+    width:.4rem;
+    height:.4rem;
+} */
+.prism-player .prism-animation{
+    width: .3rem;
+    height: .3rem;
+    left: 0;
+    top: 0;
+}
 /* 公共小标题 */
 .decTit{
     height: .7rem;

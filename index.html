@@ -6,9 +6,12 @@
     <title>首页</title>
     <script src="./js/rem.js"></script>
     <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.2/skins/default/aliplayer-min.css" />
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.2/skins/default/aliplayer-min.css" />
+    <script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -178,11 +181,12 @@
                 <h3>精彩校园视频</h3>
                 <h4>Wonderful compus video</h4>
             </div>
-            <div class="video">
-                <video  class="video-player" id="video-player" src="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4"
-                    loop="loop" poster="./images/video-cover.png" webkit-playsinline="">
+            <div class="video" >
+                <div class="prism-player" id="player-con"></div>
+                <!-- <video  class="video-player" id="video-player" width="100%" height="100%" src="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4"
+                    loop="loop" webkit-playsinline="">
                 </video>
-                <span class="playBtn"></span>
+                <span class="playBtn"></span> -->
             </div>
             <p class="decTit">学员毕业演讲</p>
         </div>
@@ -322,9 +326,10 @@
 
     </div>
     <script src="./js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js"></script>
     <script src="./js/base.js"></script>
 
-    <script>
+    <!-- <script>
         $(function () {
             // 视频播放
             var video = document.getElementById("video-player");
@@ -342,7 +347,62 @@
             })
 
         })
+    </script> -->
+
+    <script>
+        var player = new Aliplayer({
+            "id": "player-con",
+            "source": "http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4",
+            "width": "3.86rem",
+            "height": "2.2rem",
+            "autoplay": false,
+            "isLive": false,
+            "rePlay": false,
+            "videoHeight": "2.2rem",
+            "playsinline": true,
+            "preload": true,
+            "controlBarVisibility": "hover",
+            "videoWidth": "3.86rem",
+            "useH5Prism": true,
+            "skinLayout": [
+            {
+                "name": "H5Loading",
+                "align": "cc"
+            },
+     
+            {
+                "name": "controlBar",
+                "align": "blabs",
+                "x": 0,
+                "y": 0,
+                "children": [
+                {
+                    "name": "progress",
+                    "align": "blabs",
+                    "x": 0,
+                    "y": 44
+                },
+                {
+                    "name": "playButton",
+                    "align": "tl",
+                    "x": 15,
+                    "y": 12
+                },
+                {
+                    "name": "fullScreenButton",
+                    "align": "tr",
+                    "x": 10,
+                    "y": 12
+                }
+                ]
+            }
+            ]
+        }, function (player) {
+            console.log("播放器创建了。");
+            }
+        );
     </script>
-    
+
+ 
 </body>
 </html>
