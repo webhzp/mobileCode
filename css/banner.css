@@ -145,3 +145,31 @@
 	position: absolute;
 	z-index: 2;
 }
+
+.show-content{
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 3;
+	transform: translate(-50%,-50%);
+}
+
+.show-content .logo{
+    width: 2.1rem;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.show-content .logo img{
+	width: 100%;
+}
+.show-content .idea{
+	font-size: .46rem;
+	color: #ffffff;
+	font-family: 'pangmenzhengdao';
+}

@@ -10,7 +10,8 @@
 }
 
 .process-item{
-    margin-bottom: .7rem;
+    width: 5rem;
+    margin: 0 auto .7rem;
 }
 .process-item .headline{
     width: 2.06rem;

@@ -46,3 +46,29 @@
     left: .3rem;
     bottom: .45rem;
 }
+
+
+/* 页码 */
+.page{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.page a{
+    width: .35rem;
+    height: .35rem;
+    line-height: .35rem;
+    text-align: center;
+    font-size: .24rem;
+    color: #9b9b9b;
+    display: inline-block;
+    background-color: #eeeeee;
+    border-radius: 50%;
+}
+.page a.active{
+    color: #4a90e2;
+    background-color: #c8e3f9;
+}
+.page a:hover{
+    color: #4a90e2;
+    background-color: #c8e3f9; 
+}
