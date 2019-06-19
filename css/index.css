@@ -169,6 +169,16 @@
     z-index: 99;
     transform: translate(-50%,-50%);
 }
+.video-wrap .video .more{
+    width: 1.8rem;
+    height: .58rem;
+    position: absolute;
+    right: .2rem;
+    bottom: .1rem;
+}
+.video-wrap .video .more img{
+    width: 100%;
+}
 
 /* 视频居中 */
 .video-wrap .video .prism-player{

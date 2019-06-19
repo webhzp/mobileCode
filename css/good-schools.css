@@ -50,7 +50,16 @@
 
 /* 页码 */
 .page{
-    text-align: center;
+    height: .35rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-bottom: .5rem;
 }
 .page a{
@@ -63,6 +72,20 @@
     display: inline-block;
     background-color: #eeeeee;
     border-radius: 50%;
+    display: inline-block;
+    margin: 0 .05rem;
+}
+.page .prev{
+    width: .35rem;
+    height: .35rem;
+    background: url(../images/page-prev.png) no-repeat;
+    background-size: 100%;
+}
+.page .next{
+    width: .35rem;
+    height: .35rem;
+    background: url(../images/page-next.png) no-repeat;
+    background-size: 100%;
 }
 .page a.active{
     color: #4a90e2;
