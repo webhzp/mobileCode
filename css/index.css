@@ -1,30 +1,54 @@
+/* 公共标题 */
+.headline h2{
+    font-size: .3rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    font-family: SourceHanSansCNMedium;
+}
+
 /* 选择菲律宾理由 */
 .choice-reasons{
     padding: 0 .3rem .35rem;
     box-sizing: border-box;
 }
-.choice-reasons h2{
-    height: 1.18rem;
-    line-height: 1.18rem;
-    text-align: center;
-    font-family: pangmenzhengdao;
+
+/* 广告图 */
+.slider-content .swiper-button-prev{
+    background-image:url(../images/prev-arrow.png);
+    background-size: .24rem .57rem;
+    left: .12rem;
+}
+.slider-content .swiper-button-next{
+    background-image:url(../images/next-arrow.png);
+    background-size: .3rem .58rem;
+    right:.12rem;
+}
+.slider-content .swiper-pagination-bullet{
+    width: .1rem;
+    height: .1rem;
+    opacity: .8;
+}
+.slider-content .swiper-pagination-bullet-active{
+    background: #ffffff;
+    opacity: 1;
 }
 
+
 .choice-reasons .reasons-list {
-    width: 5.5rem;
-    margin: 0 auto;
+    width: 5.7rem;
+    margin: .36rem auto 0;
 }
 .choice-reasons .reasons-list .item{
-    width: 2.66rem;
-    height: 2.66rem;
-    border-radius: .12rem;
+    width: 1.82rem;
+    height: 2.33rem;
     float: left;
-    margin-right: .18rem;
-    margin-bottom: .18rem;
+    margin-right: .1rem;
+    margin-bottom: .1rem;
     overflow: hidden;
     position: relative;
 }
-.choice-reasons .reasons-list .item:nth-child(even){
+.choice-reasons .reasons-list .item:nth-child(3n){
     margin-right: 0;
 }
 .choice-reasons .reasons-list .item img{
@@ -33,9 +57,9 @@
 }
 .choice-reasons .reasons-list .item .mask{
     width: 100%;
-    height: .78rem;
+    height: 100%;
     text-align: center;
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.5);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -47,53 +71,28 @@
     -ms-flex-direction: column;
     flex-direction: column;
     color: #ffffff;
-    font-size: .22rem;
+    font-size: .24rem;
     position: absolute;
     left: 0;
     bottom: 0;
 }
 
-/* 公共标题1 */
-.title{
-    font-size: .3rem;
-    height: 1.46rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-.title h4{
-    font-size: .24rem;
-}
-
 /* 学员生活 */
 .student-life{
-    width: 100%;
-    background-color: #eeeeee;
-    padding: 0 .3rem .75rem;
-    box-sizing: border-box;
+    width: 5.7rem;
+    margin:0 auto 1rem;
 }
 
 .student-life .life-list .item{
-    width: 1.6rem;
-    height: 2.6rem;
+    width: 2.8rem;
+    height: 2.33rem;
     overflow: hidden;
     position: relative;
     float: left;
-    margin-right: .16rem;
-    overflow: hidden;
-    border-radius: .06rem;
+    margin-right: .1rem;
+    margin-bottom: .1rem;
 }
-.student-life .life-list .item:last-child{
+.student-life .life-list .item:nth-child(2n){
     margin-right: 0;
 }
 .student-life .life-list .item img{
@@ -123,32 +122,29 @@
     top: 0;
 }
 .student-life .life-list .mask h3{
-    font-size: .24rem;
+    font-size: .3rem;
 }
 .student-life .life-list .mask h4{
-    font-size: .22rem;
+    font-size: .3rem;
 }
 
 
 /* 校园视频 */
 .video-wrap{
     width: 100%;
-    background-color: #eeeeee;
-    padding: 0 .3rem;
-    box-sizing: border-box;
+    height: 7.06rem;
+    background: url(../images/video-bg-new.png) no-repeat;
+    background-size: 100%;
 }
 
 .video-wrap .video{
-    width: 6.86rem;
-    height:3.86rem;
-    margin: 0 auto;
-    background: url(../images/video-bg.png) no-repeat;
-    background-size: 100%;
+    width: 100%;
+    height: 7.06rem;
     position: relative;
 }
 .video-wrap .video .video-player{
-    width: 3.86rem;
-    height:2.2rem;
+    width: 6.33rem;
+    height:4.13rem;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -173,8 +169,8 @@
     width: 1.8rem;
     height: .58rem;
     position: absolute;
-    right: .2rem;
-    bottom: .1rem;
+    right: .58rem;
+    bottom: .72rem;
 }
 .video-wrap .video .more img{
     width: 100%;
@@ -192,109 +188,115 @@
     -o-transform: translate(-50%,-50%);
 }
 
-.prism-player .prism-big-play-btn .outter{
-    display: none;
-}
 
-/* 全屏按钮 */
-/* .prism-player .prism-fullscreen-btn{
-    width:.4rem;
-    height:.4rem;
-} */
-.prism-player .prism-animation{
-    width: .3rem;
-    height: .3rem;
-    left: 0;
-    top: 0;
-}
-/* 公共小标题 */
-.decTit{
-    height: .7rem;
-    line-height: .7rem;
-    font-size: .24rem;
-}
+
 
 /* 强纳森故事 */
-.story-wrap{
-    background-color: #ffffff;
-    padding: 0.24rem .3rem;
-    box-sizing: border-box;
-}
-.story-wrap img{
+.about-container{
     width: 100%;
-    display: block;
-}
-
-/* 公共标题2 */
-.headline{
-    height: 2.88rem;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    height: 4.9rem;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    align-items: center;
 }
-.headline h3{
-    font-size: .52rem;
-    margin-bottom: .6rem;
+.about-container .img-wrap{
+    width: 2.74rem;
+    height: 2.74rem;
+    border-radius: 50%;
+    margin-right: .5rem;
 }
-.headline span{
-    width: 1rem;
-    height: .04rem;
-    background-color: #4a90e2;
-    display: inline-block;
+.about-container .img-wrap img{
+    width: 100%;
+}
+.about-container .main h3{
+    font-size: .24rem;
+    margin-bottom: .25rem;
+}
+.about-container .main p{
+    font-size: .2rem;
+    line-height: .3rem;
 }
 
 /* 优质学校  */
 .good-schools{
     background-color: #eeeeee;
-    padding: 0 .3rem;
-    box-sizing: border-box;
+    padding-bottom: .72rem;
 }
-
+.good-schools .schools-list {
+    margin-bottom: .36rem;
+}
 .good-schools .schools-list .item{
-    width: 6.86rem;
-    height: 7.8rem;
-    border-radius: .12rem;
-    background-color: #fff;
-    box-shadow: .01rem .01rem .08rem #ccc;
-    margin-bottom: .7rem;
+    width: 100%;
+    height: 2.54rem;
     overflow: hidden;
 }
-.good-schools .schools-list .item img{
-    width: 100%;
-    display: block;
-    border-radius: .12rem;
+.good-schools .schools-list .item:nth-child(1) .main{
+    background-color: #abe2ff;
 }
-.good-schools .schools-list .item .text h3{
+.good-schools .schools-list .item:nth-child(2) .main{
+    background-color: #f2d59c;
+}
+.good-schools .schools-list .item:nth-child(3) .main{
+    background-color: #d3fdc1;
+}
+.good-schools .schools-list .item:nth-child(2n) .img-wrap{
+    float: right;
+}
+.good-schools .schools-list .item:nth-child(2n) .main h3{
+    text-align: right;
+}
+.good-schools .schools-list .item:last-child{
+    margin-right: 0;
+}
+
+.good-schools .schools-list .item a{
     width: 100%;
-    font-size: .3rem;
-    height: 1.3rem;
-    line-height: 1.3rem;
-    text-align: center;
+    height: 100%;
     color: #000000;
-    font-weight: 400;
+    display: block;
+}
+.good-schools .schools-list .item .img-wrap{
+    width: 3.75rem;
+    height: 2.54rem;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+}
+.good-schools .schools-list .item .img-wrap img{
+    max-width: 100%;
+    transition: all 0.6s;
+}
+.good-schools .schools-list .item .main{
+    width:3.75rem;
+    height: 2.54rem;
+    padding:20px 30px;
+    box-sizing: border-box;
+    float: left;
+    overflow: hidden;
+}
+.good-schools .schools-list .item .main h3{
+    font-size: .16rem;
+    margin-bottom: .1rem;
+}
+
+.good-schools .schools-list .item .main p{
+    font-size: .12rem;
+    line-height: .36rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    
 }
 
 /* 公共链接 */
 .more-link{
-    width: 5.08rem;
-    height: .8rem;
-    line-height: .8rem;
-    font-size: .26rem;
-    font-weight: 400;
+    width: 3.72rem;
+    height: .64rem;
+    line-height: .64rem;
+    font-size: .24rem;
     text-align: center;
     background-color: #253b94;
-    border-radius: .34rem;
     margin: 0 auto;
 }
 .more-link a{
@@ -309,6 +311,58 @@
     padding: 0 .3rem 1.56rem;
     box-sizing: border-box;
 }
+
+/* 轮播图2 */
+.hot-spots .slider-content{
+    width: 100%;
+    height: 5.38rem;
+    margin-bottom: .36rem;
+}
+.hot-spots .slider-content img{
+    width: 100%;
+}
+
+.hot-spots .slider-content .swiper-button-prev{
+    left: .1rem;
+    top: 1.6rem;
+}
+.hot-spots .slider-content .swiper-button-next{
+    right: .1rem;
+    top: 1.6rem;
+}
+
+.hot-spots .slider-content .single-item{
+    width: 100%;
+    height: 5.38rem;
+    overflow: hidden;
+}
+.hot-spots .slider-content .single-item .img-wrap{
+    width: 100%;
+    height: 3.07rem;
+    overflow: hidden;
+}
+.hot-spots .slider-content .single-item .main{
+    width: 100%;
+    height: 2.3rem;
+    background-color: #fff;
+    padding: .34rem .6rem;
+    box-sizing: border-box;
+}
+.hot-spots .slider-content .single-item .main h3{
+    font-size: .24rem;
+}
+.hot-spots .slider-content .single-item .main p{
+    font-size: .18rem;
+    line-height: .3rem;
+}
+.hot-spots .slider-content .swiper-pagination{
+   position: absolute;
+   bottom: 2.5rem;
+}
+
+
+
+
 
 .hot-spots .spots-list .item{
     width: 6.86rem;
