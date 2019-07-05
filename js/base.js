@@ -54,8 +54,10 @@ $(function () {
         var screenH = window.screen.height;//获取屏幕分辨率的高
         if($(window).scrollTop() >= screenH){
             $(".backTop").show();
+            $(".consultBtn").show();
         }else{
             $(".backTop").hide();
+            $(".consultBtn").hide();
         }
     });
 

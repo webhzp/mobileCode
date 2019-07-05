@@ -269,7 +269,7 @@
 .good-schools .schools-list .item .main{
     width:3.75rem;
     height: 2.54rem;
-    padding:20px 30px;
+    padding:20px 26px;
     box-sizing: border-box;
     float: left;
     overflow: hidden;
@@ -308,7 +308,7 @@
 /* 热门景点 */
 .hot-spots{
     background-color: #eeeeee;
-    padding: 0 .3rem 1.56rem;
+    padding: 0 .3rem 1rem;
     box-sizing: border-box;
 }
 
