@@ -27,25 +27,118 @@
     margin-bottom: .3rem;
 }
 
+
+.headline{
+    width: 100%;
+    margin-bottom: .3rem;
+}
+.headline h3{
+    font-size: .28rem;
+    color: #253b94;
+    padding-bottom: .05rem;
+    border-bottom: .03rem solid #253b94;
+    letter-spacing: .05rem;
+    display: inline-block;
+}
+
 /* 校园相册 */
-.album-item .headline{
+.album-list{
+    margin-bottom: .56rem;
+}
+.album-list .item{
+    width: 3.35rem;
+    height: 2rem;
+    overflow: hidden;
+    float: left;
+    margin:  0 .2rem .2rem 0;
+}
+.album-list .item img{
     width: 100%;
-    height:1.06rem;
-    line-height: 1.06rem;
-    color: #ffffff;
+}
+.album-list .item:nth-child(2n){
+    margin-right: 0;
+}
+
+#extraPhoto{
+    width: 100%;
+    color: #fff;
+    font-size: .22rem;
+    cursor: pointer;
+    font-weight: 400;
+    padding: .06rem .13rem;
+    background: #2c86c0;
+    white-space: nowrap;
     text-align: center;
-    font-size: .34rem;
-    background-color: #243e99;
-    margin: .2rem 0;
+    display: inline-block;
 }
-.album-item .album-list .item{
-    width: 100%;
-    display: block;
-    margin-bottom: .2rem;
+
+
+/* 课程选择 */
+.course-close .close-item h1{
+    height: .64rem;
+    line-height: .64rem;
+    text-align: center;
+    background-color: #253b94;
+    font-size: .28rem;
+    color: #ffffff;
 }
-.album-item .album-list .item img{
-    width: 100%;
+
+.course-close .close-item .thead{
+    height: .54rem;
+    line-height: .54rem;
+    background-color: #ffffff;
+    font-size: .28rem;
+    color: #253b94;
+    display: flex;
+}
+.course-close .close-item .thead span{
     display: block;
+    text-align: center;
+}
+.course-close .close-item .thead span:nth-child(1){
+    width: 25%;
+}
+.course-close .close-item .thead span:nth-child(2){
+    width: 50%;
+}
+.course-close .close-item .thead span:nth-child(3){
+    width: 25%;
+}
+.course-close .close-item .tbody {
+    margin-bottom: 54px;
+}
+.course-close .close-item .tbody li{
+    height: .54rem;
+    line-height: .54rem;
+    background-color: #ffffff;
+    font-size: .22rem;
+    text-align: center;
+    color: #253b94;
+    display: flex;
+}
+.course-close .close-item .tbody li .label{
+    width: 25%;
+    font-size: .26rem;
+    font-weight: bold;
+}
+.course-close .close-item .tbody li .course{
+    width: 50%;
+}
+.course-close .close-item .tbody li .other{
+    width: 25%;
+}
+.course-close .close-item .tbody li .house-type{
+    display: flex;
+    justify-content: space-around;
+}
+.course-close .close-item .tbody li .house-type div{
+    margin: 0 .2rem;
+}
+.course-close .close-item .tbody li:nth-child(odd){
+    background-color: #eeeeee;
+}
+.course-close .close-item .tbody li:hover{
+    background-color: #eeeeee;
 }
 
 /* 立即咨询 */

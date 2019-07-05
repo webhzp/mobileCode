@@ -95,37 +95,32 @@ img{
 .header{
 	width: 100%;
 	height: .86rem;
+	background-color: #253b94;
 	padding: 0 .3rem;
 	box-sizing: border-box;
-	background: transparent;
 	position: relative;
-	left: 0;
-	top: 0;
-	z-index: 9;
 }
 .header .navBtn{
 	width: .78rem;
 	height: 100%;
-	background: url(../images/navBtn-blue.png) no-repeat center center;
+	background: url(../images/navBtn.png) no-repeat center center;
 	background-size: .4rem .34rem;
 	position: absolute;
 	left: .3rem;
 	top: 0;
+
 }
-.header .tel{
-	height: .34rem;
+.header .logo{
+	height: 100%;
 	display: flex;
 	align-items: center;
-	color: #0b0b9a;
-	font-size: .24rem;
-	position: absolute;
-	right: .3rem;
-	top: .3rem;
+	justify-content: flex-start;
+	padding-left: .8rem;
+	box-sizing: border-box;
 }
-.header .tel .icon{
-	width: .3rem;
-	display: inline-block;
-	margin-right: .1rem;
+.header .logo img{
+	width:1.9rem;
+	height: .34rem; 
 }
 
 /* 导航菜单 */
@@ -138,7 +133,6 @@ img{
 	box-shadow: 0 0 .08rem #ccc;
 	position: relative;
 	left: -.3rem;
-	top: .88rem;
 	z-index: 99;
 	display: none;
 }
@@ -214,40 +208,6 @@ img{
 	box-sizing: border-box;
 }
 
-.adv-container{
-	height: 2rem;
-	margin-bottom: .2rem;
-	position: relative;
-}
-.adv-container img{
-	width: 100%;
-}
-.adv-container .mask{
-	width: 100%;
-    height: 100%;
-    color: #ffffff;
-    background: rgba(0,0,0,.4);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.adv-container .mask p{
-	font-size: .38rem;
-	font-family: 'SourceHanSansCNMedium';
-}
 
 /* 公共底部 */
 .footer{
@@ -345,8 +305,8 @@ img{
 
 /* 回到顶部 */
 .footer .backTop{
-	width: .6rem;
-	height: .6rem;
+	width: 60px;
+	height: 60px;
 	cursor: pointer;
 	position: absolute;
 	top:-1.64rem;
