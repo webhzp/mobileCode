@@ -35,6 +35,57 @@
 }
 
 
+.choice-reasons .reasons-list{
+    margin-top: .3rem;
+}
+.choice-reasons .reasons-list li {
+    width: 100%;
+    height: 2.6rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.choice-reasons .reasons-list li .main {
+    width: 47%;
+    padding: .2rem;
+    box-sizing: border-box;
+    margin-right: .2rem;
+    float: left;
+}
+
+.choice-reasons .reasons-list li .main h3 {
+    font-size: .24rem;
+    padding: .1rem 0;
+    line-height: .34rem;
+    color: #fd9c27;
+    border-bottom: .02rem solid #fd9c27;
+    margin-bottom: .15rem;
+}
+
+.choice-reasons .reasons-list li .main p {
+    line-height: .34rem;
+    font-size: .18rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.choice-reasons .reasons-list li .img-wrap {
+    width: 50%;
+    float: left;
+}
+
+.choice-reasons .reasons-list li img {
+    width: 100%;
+    display: block;
+}
+
+.choice-reasons .reasons-list li:nth-child(2n) .main {
+    float: right;
+}
+
+/* 
 .choice-reasons .reasons-list {
     width: 5.7rem;
     margin: .36rem auto 0;
@@ -75,7 +126,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-}
+} */
 
 /* 学员生活 */
 .student-life{
@@ -211,6 +262,7 @@
 .about-container .main h3{
     font-size: .24rem;
     margin-bottom: .25rem;
+    color: #151515;
 }
 .about-container .main p{
     font-size: .2rem;
