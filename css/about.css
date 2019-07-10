@@ -72,6 +72,12 @@
     display: inline-block;
 }
 
+.course-suggest{
+    margin-bottom: 20px;
+}
+.course-suggest img{
+    width: 100%;
+}
 
 /* 课程选择 */
 .course-close .close-item h1{

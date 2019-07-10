@@ -148,7 +148,9 @@ img {
 	display: inline-block;
 	margin-right: .1rem;
 }
-
+.header .tel .icon img{
+	width: 100%;
+}
 /* 导航菜单 */
 
 .header .nav {
@@ -304,6 +306,11 @@ img {
 }
 .contact-us span{
 	font-size: .2rem;
+}
+
+.footer .contact-way{
+	width: 5rem;
+	margin: 0 auto;
 }
 
 .footer .contact-way .way-item{
